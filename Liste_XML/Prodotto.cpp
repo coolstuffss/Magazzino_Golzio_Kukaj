@@ -22,7 +22,7 @@ int Prodotto::getCodice() { return codice; }
 
 std::string Prodotto::getNome() { return nome; }
 
-float Prodotto::GetPrezzo() { return prezzo; }
+float Prodotto::getPrezzo() { return prezzo; }
 
 std::string Prodotto::getDescrizione() { return descrizione; }
 

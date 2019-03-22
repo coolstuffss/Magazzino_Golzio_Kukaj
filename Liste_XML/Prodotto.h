@@ -13,22 +13,23 @@
 class Prodotto
 {
     public:
-        Prodotto(int codice, std::string nome, float prezzo, std::string descrizione, int quantita, int scaffale);
-        Prodotto();
+        Prodotto(int, std::string, float, std::string, int, int); //costruttore per l'oggetto
+        Prodotto(); //costruttore per un oggetto temporaneo
         int getCodice();
         std::string getNome();
-        float GetPrezzo();
+        float getPrezzo();
         std::string getDescrizione();
         int getQuantita();
         int getScaffale();
+        friend Prodotto& prendiDati();
 
     private:
         int codice; //codice del prodotto univoco
-        std::string nome; //
-        float prezzo;
-        std::string descrizione;
-        int quantita;
-        int scaffale;
+        std::string nome; //nome del prodotto
+        float prezzo; //prezzo in euro
+        std::string descrizione; //descrizione del prodotto massimo 50 caratteri
+        int quantita; //quante copie ce ne sono
+        int scaffale; //id dello scaffale in cui è riposto
 };
 
 #endif //PRODOTTO_h
