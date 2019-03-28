@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<magazzino id="5">
+	<prodotto>
+		<codice>1</codice>
+		<nome>Dildo di gomma</nome>
+		<quantita>666</quantita>
+		<descrizione>Bellissimi dildi di gomma per uso personale</descrizione>
+		<scaffale>69</scaffale>
+		<prezzo>100</prezzo>
+	</prodotto>
+</magazzino>
