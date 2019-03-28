@@ -52,6 +52,14 @@ int main()
         69
     };
 
+    //apro il file
+    if((FileMagazzini = fopen("FileMagazzini.xml", "w")) == NULL)
+        cout << "[ERRORE] file non aperto correttamente" << endl;
+    else
+        cout << "file aperto correttamente" << endl;
+    
+    
+
     cout << "inserire il codice del magazzino: "; cin >> magazzino;
 
     system("pause");
