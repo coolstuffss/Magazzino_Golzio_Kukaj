@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-g", "*.cpp",
-                "-std=c++11",
+                "-std=c++11"
             ],
             "group": {
                 "kind": "build",

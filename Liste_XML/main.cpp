@@ -36,48 +36,45 @@ typedef struct struct_prodotto //struttura dati che contiene i dati del prodotto
     int scaffale; //id dello scaffale in cui è riposto
 }prodotto;
 
-/*file che serve per stampare l'intestazione sul file*/
-void stampaIntestazione(FILE *, int, prodotto *);
+/*funzione che stampa su file il tag magazzino con l'apposito id di magazzino*/
+// void stampaMagazzino(FILE *, int);
+
+/*funzione che stampa sul file il prdotto*/
+void stampaProdotto(ofstream, prodotto *);
 
 int main()
 {
-    FILE *FileMagazzini; //file dove andrò a scrivere la struttura XML
+    ofstream FileMagazzini{"FileMagazzini.xml"}; //file dove andrò a scrivere la struttura XML
     int magazzino; //codice del magazzino che sto riempiendo
     prodotto prova = {
         1,
-        "Dildo di gomma",
+        "jwg",
         100.00,
-        "Bellissimi dildi di gomma per uso personale",
+        "hfjskdhfjkdshfkhsdkjfhdkfhdf",
         666,
         69
     };
 
-    //apro il file
-    if((FileMagazzini = fopen("FileMagazzini.xml", "w")) == NULL)
-        cout << "[ERRORE] file non aperto correttamente" << endl;
-    else
-        cout << "file aperto correttamente" << endl;
-    
-    
-
     cout << "inserire il codice del magazzino: "; cin >> magazzino;
+    
+    //stampo la linea di intestazione nel file
+    fprintf(FileMagazzini, "<?xml version=\"1.0\"?>\n");
+    fprintf(FileMagazzini, "<magazzino id=\"%d\">\n", magazzino);
+    stampaProdotto(FileMagazzini, &prova);
+    fprintf(FileMagazzini, "</magazzino>\n");
 
     system("pause");
     return 0;
 }
 
-void stampaIntestazione(FILE *file, int magazzino, prodotto *p)
+void stampaProdotto(ofstream file, prodotto *p)
 {
-    // file << "<?xml version=\"1.0\"?>" << endl;
-    // file << "<magazzino id=\"" << magazzino << "\">" << endl;
-    //     file << "\t<prodotto>" << endl;
-    //         file << "\t\t<codice>" << p->codice << "</codice>" << endl;
-    //         file << "\t\t<nome>" << p->nome << "</nome>" << endl;
-    //         file << "\t\t<quantita>" << p->quantita << "</quantita>" << endl;
-    //         file << "\t\t<descrizione>" << p->descrizione << "</descrizione>" << endl;
-    //         file << "\t\t<scaffale>" << p->scaffale << "</scaffale>" << endl;
-    //         file << "\t\t<prezzo>" << p->prezzo << "</prezzo>" << endl;
-    //     file << "\t</prodotto>" << endl;
-    // file << "</magazzino>" << endl;
-
+    fprintf(file, "\t<prodotto>\n");
+        fprintf(file, "\t\t<codice>%d</codice>\n", p->codice);
+        fprintf(file, "\t\t<nome>%s</nome>\n", p->nome);
+        fprintf(file, "\t\t<quantita>%d</quantita>\n", p->quantita);
+        fprintf(file, "\t\t<descrizione>%s</descrizione>\n", p->descrizione);
+        fprintf(file, "\t\t<scaffale>%d</scaffale>\n", p->scaffale);
+        fprintf(file, "\t\t<prezzo>%.2f</prezzo>\n", p->prezzo);
+    fprintf(file, "\t</prodotto>\n");
 }
