@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<document>
+
 <magazzino id="4">
 	<prodotto>
 		<codice>401</codice>
@@ -75,21 +77,4 @@
 	</prodotto>
 </magazzino>
 
-<magazzino id="1">
-	<prodotto>
-		<codice>1</codice>
-		<nome>g</nome>
-		<quantita>12</quantita>
-		<descrizione>g</descrizione>
-		<scaffale>444</scaffale>
-		<prezzo>213</prezzo>
-	</prodotto>
-	<prodotto>
-		<codice>123</codice>
-		<nome>Gesu</nome>
-		<quantita>3333</quantita>
-		<descrizione>asdaijsdiasdiasdiajsdiajsdiasdiasjdi</descrizione>
-		<scaffale>42</scaffale>
-		<prezzo>123</prezzo>
-	</prodotto>
-</magazzino>
+</document>
