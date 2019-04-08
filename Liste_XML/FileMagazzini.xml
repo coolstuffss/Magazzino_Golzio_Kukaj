@@ -1,11 +1,1 @@
 <?xml version="1.0"?>
-<magazzino id="3">
-	<prodotto>
-		<codice>1</codice>
-		<nome>°þn</nome>
-		<quantita>666</quantita>
-		<descrizione>yx</descrizione>
-		<scaffale>69</scaffale>
-		<prezzo>100.00</prezzo>
-	</prodotto>
-</magazzino>
