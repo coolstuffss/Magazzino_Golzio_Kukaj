@@ -1,1 +1,76 @@
 <?xml version="1.0"?>
+<magazzino id="4">
+	<prodotto>
+		<codice>401</codice>
+		<nome>uova di Pasqua - Fondente</nome>
+		<quantita>50</quantita>
+		<descrizione>UOva di Pasqua artigianali vendute dagli scout di Gassino Torinese</descrizione>
+		<scaffale>2</scaffale>
+		<prezzo>6</prezzo>
+	</prodotto>
+	<prodotto>
+		<codice>400</codice>
+		<nome>uova di pasqua - Latte</nome>
+		<quantita>100</quantita>
+		<descrizione>Uova di Pasqua artigianali vendute dagli scout di Gassino Torinese</descrizione>
+		<scaffale>1</scaffale>
+		<prezzo>6</prezzo>
+	</prodotto>
+</magazzino>
+
+<magazzino id="3">
+	<prodotto>
+		<codice>301</codice>
+		<nome>DELL XPS 15</nome>
+		<quantita>55139</quantita>
+		<descrizione>Notebook DELL XPS 15 pollici i7-8750H, 16GB RAM, 512 GB SSD, NVIDIA GeForce 1050 Ti, Windows 10 Pro</descrizione>
+		<scaffale>88</scaffale>
+		<prezzo>1644</prezzo>
+	</prodotto>
+	<prodotto>
+		<codice>300</codice>
+		<nome>Razer Blade Stealth</nome>
+		<quantita>25000</quantita>
+		<descrizione>Razer Blade Stealth da 15 pollici Intel Core i7 - 7500u, 16GB RAM, 512GB SSD, Windows 10 nero</descrizione>
+		<scaffale>45</scaffale>
+		<prezzo>1378.16</prezzo>
+	</prodotto>
+</magazzino>
+
+<magazzino id="2">
+	<prodotto>
+		<codice>201</codice>
+		<nome>chitarra KH-2 Vintage</nome>
+		<quantita>1500</quantita>
+		<descrizione>chitarra esp signature di kirk hammett</descrizione>
+		<scaffale>1</scaffale>
+		<prezzo>2099</prezzo>
+	</prodotto>
+	<prodotto>
+		<codice>200</codice>
+		<nome>chitarra epiphone explorer 1984 black</nome>
+		<quantita>5</quantita>
+		<descrizione>chitarra modello explorer in ebano nero edizione limitata</descrizione>
+		<scaffale>5</scaffale>
+		<prezzo>595</prezzo>
+	</prodotto>
+</magazzino>
+
+<magazzino id="1">
+	<prodotto>
+		<codice>101</codice>
+		<nome>cassa bluetooth</nome>
+		<quantita>1000</quantita>
+		<descrizione>altoparlante intelligente per ascoltare la musica dove vuoi</descrizione>
+		<scaffale>1</scaffale>
+		<prezzo>59.99</prezzo>
+	</prodotto>
+	<prodotto>
+		<codice>100</codice>
+		<nome>zaino</nome>
+		<quantita>150</quantita>
+		<descrizione>zaino robusto per il trasporto del PC portatile</descrizione>
+		<scaffale>2</scaffale>
+		<prezzo>35.99</prezzo>
+	</prodotto>
+</magazzino>
