@@ -64,6 +64,8 @@ int main()
     bool esci; //quando è settata a flase esce dal programma
     list<prodotto> magazzini; //lista che contiene
 
+    FileMagazzini << "<document>\n"; //scrivo il tag principale sul file
+
     do
     {
         system("cls");
@@ -113,6 +115,7 @@ int main()
                 break;
 
             case 3:
+                FileMagazzini << "\n</document>"; //chiudo il tag principale
                 FileMagazzini.close();
                 esci = false; //esce dal programma
                 break;
